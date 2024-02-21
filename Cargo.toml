@@ -1,0 +1,8 @@
+[package]
+name = "cross_crate_trait_bounds"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+remote_01 = { path = "crates/remote_01" }
+space = "0.18.0"
