@@ -24,3 +24,10 @@ where
 	}
 }
 
+pub fn remote_generic_func<Met : space::Metric<T>, T>() {
+	let _ = PhantomData::<Met>::default();
+	let _ = PhantomData::<T>::default();
+}
+
+pub fn remote_func(_ : &space::Neighbor<u32>) { }
+
